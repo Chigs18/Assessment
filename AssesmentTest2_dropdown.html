@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .nav{
+            background-color: rgb(108, 105, 247);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo img{
+            height: 50px;
+            width: 50px;
+            margin-left: 12px;
+        }
+        .menu-area a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+            color: white;
+            height: 60px;
+            width: 150px;
+            /* border:1px solid white; */
+            font-weight: bold;
+            text-decoration: none;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .menu-area a:hover {
+            background-color: rgb(54, 92, 179);
+            color: white;
+            
+        }
+
+        .menu-area ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: right;
+            align-items: center;
+            width: 100%;
+            
+        }
+
+        .menu-area li {
+            position: relative;
+            /* width: 100%; */
+            
+            
+            /* border: 1px solid; */
+            text-align: center;
+        }
+
+        .menu-area li button{
+            padding: 6px;
+            width: 70px;
+            margin: 20px 12px;
+            background-color: white;
+            border: 0;
+        }
+
+        .menu-area li:hover .dropdown-1>li {
+            top: 0;
+            display: block;
+        }
+
+        .dropdown-1 li {
+            display: none;
+            position: relative;
+        }
+
+        .dropdown-1 {
+            display: flex;
+            position: absolute;
+            flex-direction: column;
+            width: 100%;
+            background-color: rgb(108, 105, 247);
+        }
+
+        .dropdown-1 li:hover .dropdown-2 li {
+            display: block;
+        }
+
+        .dropdown-2 li {
+            display: none;
+        }
+
+        .dropdown-2 {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            width: 100%;
+            top: 0;
+            left: 100%;
+            background-color: rgb(108, 105, 247);
+        }
+
+        .fa{
+            margin-top: 4px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <div class="logo">
+            <img src="images/topslogo.png" alt="">
+        </div>
+    <div class="menu-area">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services &nbsp;<i class="fa fa-caret-down" aria-hidden="true"></i></a>
+                <ul class="dropdown-1">
+                    <li><a href="#">Web Design</a></li>
+                    <li><a href="#">Marketing</a></li>
+                    <li><a href="#">Wordpress</a></li>
+                    <li><a href="#">More &nbsp;<i class="fa fa-caret-right" aria-hidden="true"></i></a>
+                        <ul class="dropdown-2">
+                            <li><a href="#">HTML</a></li>
+                            <li><a href="#">CSS</a></li>
+                            <li><a href="#">JavaScript</a></li>
+                            <li><a href="#">jquery</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><button>Login</button></li>
+        </ul>
+        
+    </div>
+</div>
+</body>
+
+</html>
