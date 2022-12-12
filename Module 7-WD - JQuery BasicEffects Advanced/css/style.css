@@ -1,0 +1,66 @@
+
+body{
+    background-color: gray;
+}
+
+table{
+    background-color: gray;
+    padding: 100px;
+}
+
+
+form{
+    width: 70%;
+    /* text-align: center; */
+    /* border: 1px solid red; */
+   box-shadow: 2px 3px 5px rgb(0, 0, 0, .5);
+    
+}
+
+.field{
+    padding-top: 10px;
+}
+
+form input{
+    padding: 12px 50px;
+}
+
+
+form input, textarea{
+    width: 40%;
+    padding-left: 50px;
+}
+
+form textarea{
+    width: 40%;
+    padding-left: 100px;
+}
+
+form input[type="radio"]{
+    width: 30px;
+}
+
+form input[type="checkbox"]{
+    width: 30px;
+}
+
+form input[type="submit"], input[type="reset"]{
+    width: 150px;
+    margin-top: 40px;
+    margin-left: 50px;
+    background-color: rgb(91, 231, 241);
+    border: 0;
+    font-size: 18px;
+}
+
+form select{
+    width: 54%;
+    padding: 10px 10px;   
+}
+
+label{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+

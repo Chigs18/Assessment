@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+    <center><form action="" method="post" name="reg_form" onsubmit="return validate()" >
+        
+            
+        
+        <table>
+            <h2>Registration Form</h2>
+            <tr>
+                <td><label for="fname">First Name:</label></td>
+                <td><input type="text" name="fname" ></td>
+            </tr>
+
+            <tr>
+                <td><label for="lname">Last Name:</label></td>
+                <td><input type="text" name="lname" ></td>
+            </tr>
+
+            <tr>
+                <td><label for="email">Email:</label></td>
+                <td><input type="email" name="email" ></td>
+            </tr>
+
+            <tr>
+                <td><label for="mobile">Mobile:</label></td>
+                <td><input type="text" name="mobile" ></td>
+            </tr>
+
+            <tr>
+                <td><label for="gender">Gender:</label></td>
+                <td><input type="radio" name="gender" >Male
+                    <input type="radio" name="gender">Female</td>
+            </tr>
+
+            <tr>
+                <td><label for="birthdate">Date of Birth:</label></td>
+                <td><input type="date" name="birthdate" ></td>
+            </tr>
+
+            <tr>
+                <td><label for="address">Address:</label></td>
+                <td><textarea name="address" id="add" cols="30" rows="10"></textarea></td>
+            </tr>
+
+            <tr>
+                <td><label for="city">City:</label></td>
+                <td><input type="text" name="city" ></td>
+            </tr>
+
+            <tr>
+                <td><label for="pin">Area Pin:</label></td>
+                <td><input type="text" name="pin" ></td>
+            </tr>
+
+            <tr>
+                <td><label for="state">State:</label></td>
+                <td><input type="text" name="state" ></td>
+            </tr>
+
+            <tr>
+                <td><label for="qualification">Qualification:</label></td>
+                <td>
+                    <select name="qualification" id="quali">
+                        <option value="-1">--Qualification--</option>
+                        <option value="graduate--">Graduate</option>
+                        <option value="postqualifiction">Post Graduate</option>
+                        
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="Specification">Specification:</label></td>
+                <td>
+                    <input type="checkbox" name="check">Computer Science
+                    <input type="checkbox" name="check">Information Technology
+                    <input type="checkbox" name="check">Computer Architechture
+                    <input type="checkbox" name="check">Tele Communications
+                </td>
+            </tr>
+
+            <tr>
+                
+                <td><label for="password">Password:</label></td>
+                <td><input type="password" name="password" ></td>
+            </tr>
+
+            <tr>
+                
+                <td><input type="submit" name="submit" type="Submit"></td>
+                <td><input type="reset" name="reset" type="Reset"></td>
+            </tr>
+
+            
+            
+        </table>
+    </form>
+</center>
+
+
+</body>
+
+</html>
