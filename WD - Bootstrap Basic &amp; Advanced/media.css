@@ -1,0 +1,19 @@
+@media only screen and (max-width: 992px){}
+
+@media only screen and (max-width: 992px){
+  
+  .myinput {
+    width: 40%;
+  
+  }
+  
+  
+  /* .col-lg-4{
+    margin-top: 30px;
+    width: 100%;
+    text-align: center;
+  }
+  .col-lg-7{
+    width: 100%;
+  } */
+}
